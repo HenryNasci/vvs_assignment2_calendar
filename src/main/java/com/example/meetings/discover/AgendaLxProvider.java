@@ -3,6 +3,7 @@ package com.example.meetings.discover;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Component;
@@ -37,11 +38,10 @@ public class AgendaLxProvider implements EventProvider {
 
     private final RestClient http;
 
-    public AgendaLxProvider() {
+    public AgendaLxProvider(@Value("${app.discover.agendalx.base-url:https://www.agendalx.pt/wp-json/agendalx/v1}") String baseUrl) {
         this.http = RestClient.builder()
-                .baseUrl("https://www.agendalx.pt/wp-json/agendalx/v1")
-                .defaultHeader("User-Agent",
-                        "Mozilla/5.0 (compatible; meetings-app/0.1; +http://localhost)")
+                .baseUrl(baseUrl)
+                .defaultHeader("User-Agent", "Mozilla/5.0 (compatible; meetings-app/0.1; +http://localhost)")
                 .build();
     }
 
