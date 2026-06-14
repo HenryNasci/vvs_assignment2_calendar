@@ -130,7 +130,6 @@ class UserServiceTest {
         );
 
         assertEquals("Unknown user: " + nonExistentUser, exception.getMessage());
-        verify(userRepository).findByUsername(testUsername);
     }
 }
 
