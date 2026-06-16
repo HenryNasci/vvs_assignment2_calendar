@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Integration tests for {@link SeatGeekProvider} against a WireMock stand-in for the
  * SeatGeek Events API (https://api.seatgeek.com/2).
  */
-class SeatGeekProviderIT {
+class SeatgeekIntegrationTest {
 
     private WireMockServer wireMock;
 

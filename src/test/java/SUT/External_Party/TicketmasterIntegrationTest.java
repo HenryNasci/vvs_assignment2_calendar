@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Integration tests for {@link TicketmasterProvider} against a WireMock stand-in for the
  * Ticketmaster Discovery API (https://app.ticketmaster.com/discovery/v2).
  */
-class TicketmasterProviderIT {
+class TicketmasterIntegrationTest {
 
     private WireMockServer wireMock;
 
