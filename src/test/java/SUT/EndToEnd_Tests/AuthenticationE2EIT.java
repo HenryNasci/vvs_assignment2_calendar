@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * End-to-end tests for the registration, login, and logout flows, driven through a real
  * browser against the running application and its "e2e" test database.
  */
-class AuthenticationE2ETest extends AbstractE2ETest {
+class AuthenticationE2EIT extends AbstractE2ETest {
 
     private static String uniqueUsername(String prefix) {
         return prefix + "-" + UUID.randomUUID().toString().substring(0, 8);

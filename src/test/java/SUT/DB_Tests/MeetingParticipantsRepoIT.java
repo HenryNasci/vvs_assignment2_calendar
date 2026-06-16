@@ -28,7 +28,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @DataJpaTest
 @ContextConfiguration(classes = MeetingsApplication.class)
-class MeetingParticipantsRepoTest {
+class MeetingParticipantsRepoIT {
 
     @Autowired
     private UserRepository userRepository;

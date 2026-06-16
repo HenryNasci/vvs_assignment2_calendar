@@ -27,7 +27,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * and the provider's date/time/description parsing logic — without depending on the
  * live AgendaLx service.
  */
-class AgendaLxIntegrationTest {
+class AgendaLxIntegrationIT {
 
     private static final ZoneId LISBON = ZoneId.of("Europe/Lisbon");
 

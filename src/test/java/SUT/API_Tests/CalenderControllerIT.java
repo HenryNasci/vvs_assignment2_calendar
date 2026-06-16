@@ -41,7 +41,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(CalendarController.class)
 @ContextConfiguration(classes = MeetingsApplication.class)
 @Import(SecurityConfig.class)
-class CalenderControllerTest {
+class CalenderControllerIT {
 
     @Autowired
     private MockMvc mockMvc;

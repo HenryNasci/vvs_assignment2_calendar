@@ -38,7 +38,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(ICalController.class)
 @ContextConfiguration(classes = MeetingsApplication.class)
 @Import(SecurityConfig.class)
-class IcalControllerTest {
+class IcalControllerIT {
 
     @Autowired
     private MockMvc mockMvc;

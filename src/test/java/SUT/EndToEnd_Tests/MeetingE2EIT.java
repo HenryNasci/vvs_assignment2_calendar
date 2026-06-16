@@ -23,7 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * <p>The invite/accept/decline scenarios use a second {@link WebDriver} session to simulate a
  * second user, since each browser session has its own cookie jar / Spring Security session.
  */
-class MeetingE2ETest extends AbstractE2ETest {
+class MeetingE2EIT extends AbstractE2ETest {
 
     private static final DateTimeFormatter DATETIME_LOCAL = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
 

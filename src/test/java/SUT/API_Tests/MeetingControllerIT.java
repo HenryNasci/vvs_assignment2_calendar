@@ -43,7 +43,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(MeetingController.class)
 @ContextConfiguration(classes = MeetingsApplication.class)
 @Import(SecurityConfig.class)
-class MeetingControllerTest {
+class MeetingControllerIT {
 
     @Autowired
     private MockMvc mockMvc;
